@@ -1,0 +1,547 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ///// */
+
+.navbar {
+    position: fixed;
+    width: 80%;
+    margin-left: 110px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.nav-links {
+    display: flex;
+    gap: 80px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: red;
+    /* Set your desired hover color */
+}
+
+.logo {
+    color: #333;
+    text-decoration: none;
+}
+
+.logo img {
+    margin-left: 15px;
+    width: 180px;
+    /* Set your desired width */
+}
+
+.registrasi {
+    color: #fff;
+    background: rgb(34, 42, 252);
+    background: linear-gradient(90deg,
+            rgba(34, 42, 252, 1) 10%,
+            rgba(157, 241, 251, 1) 68%,
+            rgba(78, 255, 210, 1) 100%,
+            rgba(0, 255, 184, 1) 100%);
+    padding: 7px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.9s;
+}
+
+.registrasi:hover {
+    background: rgb(34, 42, 252);
+    background: linear-gradient(315deg, rgba(34, 42, 252, 1) 10%, rgba(157, 241, 251, 1) 68%, rgba(78, 255, 210, 1) 100%, rgba(0, 255, 184, 1) 100%);
+    color: #fff;
+}
+
+/* Home section styles */
+.home {
+    background: url('/static/images/SUDIRMANRUN2023.png') center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.home .content {
+    width: auto;
+}
+
+.tentang-acara {
+    background-color: #ffd700;
+    /* Warna kuning */
+    padding: 10px 20px;
+    border-radius: 50px;
+    /* Border radius */
+    text-align: center;
+    position: absolute;
+    /* Atur posisi absolut */
+    top: 77%;
+    /* Atur posisi 50% dari atas */
+    left: 15%;
+    /* Atur posisi 50% dari kiri */
+    transform: translate(-50%, -50%);
+    /* Pusatkan elemen di tengah */
+}
+
+.tentang-acara p {
+    margin: 0;
+    color: #fff;
+    /* Warna teks (disesuaikan) */
+    font-weight: bold;
+}
+
+/*  */
+.card-section {
+    margin-top: 17vh;
+    margin-inline: 18vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dua kolom dengan lebar yang sama */
+    gap: 0px;
+    /* Jarak antara kolom */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #ffd700;
+    /* Warna kuning */
+    padding: 15px;
+    border-radius: 10px;
+    /* Border radius */
+    text-align: center;
+}
+
+.card-kiri {
+    background: rgb(34, 163, 252);
+    background: linear-gradient(87deg, rgba(34, 163, 252, 1) 70%, rgba(157, 217, 251, 1) 100%, rgba(78, 206, 255, 1) 100%);
+    width: 70vh;
+    /* Agar gambar kotak memenuhi lebar card */
+    height: 68vh;
+    object-fit: cover;
+    border-radius: 25px;
+    /* Menggunakan border radius pada gambar */
+    text-align: center;
+    margin-left: 80px;
+    transition: background 0.9s ease;
+    /* Efek transisi pada latar belakang */
+}
+
+.card-kiri:hover {
+    background: rgb(34, 163, 252);
+    background: linear-gradient(254deg, rgba(34, 163, 252, 1) 70%, rgba(157, 217, 251, 1) 100%, rgba(78, 206, 255, 1) 100%);
+}
+
+.card-kiri img {
+    width: 88%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    /* Menambahkan efek transisi untuk perubahan transformasi */
+}
+
+.card-kiri img:hover {
+    transform: scale(1.05);
+    /* Membesarkan gambar saat hover */
+}
+
+.card-kiri h1 {
+    margin-top: 15px;
+    color: #fff;
+    /* Warna teks (disesuaikan) */
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: left;
+    font-style: italic;
+    margin-left: 25px;
+}
+
+.card-kiri p {
+    color: #fff;
+    /* Warna teks (disesuaikan) */
+    font-weight: 500;
+    font-size: smaller;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* kanan */
+.card-kanan {
+    background: rgb(34, 163, 252);
+    background: linear-gradient(87deg, rgba(34, 163, 252, 1) 70%, rgba(157, 217, 251, 1) 100%, rgba(78, 206, 255, 1) 100%);
+    border-radius: 20px;
+    /* Border radius */
+    text-align: center;
+    margin-right: 35px;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: background 0.9s ease;
+    /* Efek transisi pada latar belakang */
+}
+
+.card-kanan:hover {
+    background: rgb(34, 163, 252);
+    background: linear-gradient(254deg, rgba(34, 163, 252, 1) 70%, rgba(157, 217, 251, 1) 100%, rgba(78, 206, 255, 1) 100%);
+}
+
+.card-kanan h1 {
+    margin-top: 5px;
+    color: #fff;
+    /* Warna teks (disesuaikan) */
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: left;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+.card-kanan p {
+    color: #fff;
+    /* Warna teks (disesuaikan) */
+    font-weight: 500;
+    font-size: smaller;
+    text-align: left;
+    margin-left: 5px;
+}
+
+/* bawah */
+.card-bawah {
+    background: rgb(34, 163, 252);
+    background: linear-gradient(87deg, rgba(34, 163, 252, 1) 70%, rgba(157, 217, 251, 1) 100%, rgba(78, 206, 255, 1) 100%);
+    width: 500px;
+    height: 160px;
+    display: flex;
+    border-radius: 20px;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 5px;
+    transition: background 0.9s ease;
+    /* Efek transisi pada latar belakang */
+}
+
+.card-bawah:hover {
+    background: rgb(34, 163, 252);
+    background: linear-gradient(254deg, rgba(34, 163, 252, 1) 70%, rgba(157, 217, 251, 1) 100%, rgba(78, 206, 255, 1) 100%);
+}
+
+.card-bawah img {
+    width: 40%;
+    height: 90%;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    /* Menambahkan efek transisi untuk perubahan transformasi */
+}
+
+.card-bawah img:hover {
+    transform: scale(1.1);
+    /* Membesarkan gambar saat hover */
+}
+
+.card-bawah-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    /* Jarak antara gambar dan teks */
+}
+
+.card-bawah h1 {
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.card-bawah p {
+    color: #fff;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+/* daftar sekarang button */
+.daftar-sekarang {
+    width: 190px;
+    height: 40px;
+    background-color: #ffd700;
+    /* Warna kuning */
+    padding: 10px 5px;
+    border-radius: 50px;
+    /* Border radius */
+    text-align: center;
+    position: absolute;
+    top: 192%;
+    left: 42%;
+}
+
+.daftar-sekarang p {
+    margin: 0;
+    color: #fff;
+    /* Warna teks (disesuaikan) */
+    font-weight: normal;
+}
+
+/* slide */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.gambaran {
+    background: rgb(34, 163, 252);
+    background: linear-gradient(87deg, rgba(34, 163, 252, 1) 28%, rgba(157, 241, 251, 1) 81%, rgba(78, 206, 255, 1) 100%);
+    ;
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+}
+
+.gambaran h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.gambaran-slide {
+    animation: 8s slide infinite linear;
+    display: inline-block;
+}
+
+.gambaran-card {
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    /* Jarak antar card */
+    overflow: hidden;
+    display: inline-block;
+}
+
+.gambaran-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* section galeri */
+.judul-galeri {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: boldeR;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 500px;
+    height: 540px;
+    vertical-align: middle;
+    border-radius: 15px;
+}
+
+.demo {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: #333333d3;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #fff;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.numtext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.section {
+    text-align: center;
+}
+
+/* berita */
+.artikel {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: boldeR;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.berita-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-inline: 20vh;
+}
+
+.berita-card {
+    width: 100%; /* Ubah lebar sesuai kebutuhan */
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px; /* Tambahkan margin bawah untuk jarak antar berita-card */
+}
+
+.berita-card:hover {
+    color: #ffcc00; /* Warna latar belakang saat dihover */
+}
+
+.berita-card:hover img {
+    transform: scale(1.05); /* Efek zoom in gambar saat dihover */
+    transition: transform 0.3s ease-in-out; /* Transisi zoom dengan durasi 0.3 detik */
+}
+
+.berita-card a:hover h3 {
+    color: #ff6600; /* Warna judul saat dihover */
+}
+
+.berita-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 20px; /* Mengatur border-radius hanya pada sudut atas */
+}
+
+.berita-card h4 {
+    color: #000;
+    margin: 10px;
+}
+
+.berita-card p.tanggal {
+    margin: 0 10px 20px;
+    color: #555;
+    font-size: smaller;
+}
+
+
+/* bawah artikel */
+.basic-info-tab {
+    text-align: center;
+    margin-top: 20px;
+    /* border: 1px solid #ddd; */
+    background: #0068f8;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.basic-info-tab a {
+    display: inline-block;
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* background-color: #f0f0f0; */
+    color: #000;
+    /* border-radius: 50px; */
+    padding: 9px 40px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    transition-duration: 0.6s;
+
+}
+
+.basic-info-tab a.active {
+    color: #fff;
+}
+
+.basic-info-tab .selector {
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    border-radius: 50px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: #b5d4ffe3;
+    background-color: #b5d4ffe3;
+}
